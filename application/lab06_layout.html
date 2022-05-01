@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab06_layout.html</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        /* header */
+        header{
+            background-color: gray;
+            text-align: center;
+            color: white;
+        }
+        /* h1{ 내가 margin을 설정하지 않아도 설정되어있는 경우가 있다.
+            margin: 0;
+        } */
+        /* nav */
+        nav{
+            float: left;
+            width: 30%;
+            height: 300px;
+            background-color: gainsboro;
+            padding: 20px;
+        }
+        nav ul{   
+        
+            list-style-type: none;
+            padding: 0;
+        }
+        article{
+            background-color: lightslategray;
+            float: right;
+            width: 70%;
+            height: 300px;
+            padding: 20px;
+        }
+        section::after {
+            content:"";
+            display: block;
+            clear: both;
+        }
+        footer{
+            background-color: gray;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+        @media screen and(max-width:800px){
+            nav {
+                width: 100%;
+            }
+            article{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+        <h1>header</h1>
+    </header>
+    <!-- 섹션 -->
+    <section>
+        <!-- 내비 -->
+        <nav>
+            <ul>
+                <li><a href="">nav 1</li>
+                <li><a href="">nav 2</li>
+                <li><a href="">nav 3</li>
+            </ul>
+        </nav>
+        <!-- 아티클 -->
+        <article>
+            <h2>article</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quis doloremque cupiditate exercitationem ut deleniti voluptatem dignissimos consequatur, at dolorem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quis doloremque cupiditate exercitationem ut deleniti voluptatem dignissimos consequatur, at dolorem!</p>
+        </article>
+    </section>
+    <!-- 푸터 -->
+    <footer>
+        <p>footer : BigData10th</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab01_box.html</title>
+    <style>
+    div{
+        box-sizing: border-box;
+        width: 300px;
+        height: 100px;
+        background-color: beige;
+        border: 5px solid;
+        /* border style이 없으면 border color를 넣어도 색깔이 나오지 않는다. */
+    }
+    p{
+        border-style: solid;
+        /* 4 :상 우 하 좌 순서 */
+        border-color: red blue yellow green;
+        /* 3 :상 우=좌 하 */
+        border-color: red blue yellow;
+        /* 2 : 상 하 / 우 좌 */
+        border-color: red blue;
+
+    }
+    p.div-border{
+            border: 1px solid;
+            width: 150px;
+            height: 150px;
+            background: gainsboro;
+            /* border-top-left-radius: 10px;
+            border-bottom-right-radius: 40px; */
+            border-radius: 5px 10px 20px 40px;
+
+    }
+    </style>
+</head>
+<body>
+    <!-- <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda mollitia enim illum eaque repellat veniam ullam quasi sequi nesciunt aut ex, itaque blanditiis, explicabo alias sapiente officiis eius? Repudiandae, recusandae.
+    </div> -->
+    
+    <!-- border -->
+    <p>
+        border-color
+    </p>
+
+    <p class="div-border">
+
+    </p>
+
+</body>
+</html>
